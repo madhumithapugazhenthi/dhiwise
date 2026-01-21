@@ -1,14 +1,15 @@
 BankOS makes sure banking actions happen in the right order, by the right people, under the right rules — with AI helping humans think, not replacing them.
 
 What it does
+************
 
-Coordinates everything
+-Coordinates everything
 
 When a customer wants something (open an account, change details, approve a loan, etc.), BankOS manages the whole process from start to finish.
 
 It tells the right systems what to do and when.
 
-Keeps humans in charge
+-Keeps humans in charge
 
 AI can suggest things (like spotting risks or recommending next steps),
 
@@ -16,19 +17,20 @@ but AI never pushes the button.
 
 A human still has to approve important actions, and policies decide what’s allowed.
 
-Creates a clear paper trail
+-Creates a clear paper trail
 
 Every decision, approval, and outcome is recorded.
 
 Nothing is silently changed; everything is traceable later.
 
 What it is not
+**************
 
-Not a core banking system
+-Not a core banking system
 
-It does not store money, balances, or ledgers.
+-It does not store money, balances, or ledgers.
 
-It doesn’t “move money” itself.
+-It doesn’t “move money” itself.
 
 Those jobs stay with existing core banking systems and external processors.
 
@@ -40,6 +42,7 @@ Core banking systems = the musicians
 The conductor doesn’t play the instruments — but without them, the music falls apart.
 
 How AI fits in (safely)
+**********************
 
 AI helps understand what’s going on
 
@@ -60,13 +63,13 @@ AI cannot approve things
 
 It’s not built as a bunch of tiny, chatty services
 
-BankOS isn’t split into dozens or hundreds of little microservices constantly calling each other.
+----BankOS isn’t split into dozens or hundreds of little microservices constantly calling each other.
 
-Instead, it’s built as one solid system with clear internal modules.
+----Instead, it’s built as one solid system with clear internal modules.
 
-That makes it faster, simpler to run, and easier to control — fewer moving parts, fewer things breaking.
+----That makes it faster, simpler to run, and easier to control — fewer moving parts, fewer things breaking.
 
-It does NOT replace the bank’s core systems
+----It does NOT replace the bank’s core systems
 
 BankOS does not hold balances or actually move money.
 
