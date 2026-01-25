@@ -1,0 +1,35 @@
+BankOS SAE Contract – Simple Explanation
+Think of it as a three-step safety process for any important banking action:
+
+The Three Steps
+Simulate (Plan)
+
+Someone proposes an action (e.g., "transfer $1,000 to another account")
+The system analyzes it on paper—no actual money moves
+It shows: what would happen, what risks exist, who needs to approve it
+This is safe because nothing actually changes yet
+Approve (Get Permission)
+
+The right person (manager, customer, etc.) explicitly says "yes, do it"
+This approval is recorded so we can audit it later
+It's specific: "I approve THIS action, for THIS amount, by THIS date"
+Critical rule: Approval never executes automatically—it's just permission
+Execute (Actually Do It)
+
+Only after approval, the bank's core system performs the action
+Money moves, accounts update, records change
+This step is irreversible (if something goes wrong, you compensate, not undo)
+The Core Rule
+No action happens without explicit, documented approval. You can't guess, assume, or infer approval—it must be written down.
+
+Who Does What
+AI / Chatbot: Can simulate and explain. CANNOT approve or execute.
+Back-office staff: Can simulate and approve (within their role limits)
+Customer: Approves their own actions
+Core banking system: Performs the final execution
+BankOS: Orchestrates and enforces the rules
+Key Safeguards
+If approval is missing → DENY the action
+If there's a policy conflict → BLOCK and escalate to a human
+Everything is audited → who did what, when, and why
+In essence: Propose safely → Get permission explicitly → Execute once approved. Nothing sneaks through without oversight.
