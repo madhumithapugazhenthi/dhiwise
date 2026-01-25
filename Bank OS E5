@@ -1,0 +1,34 @@
+Simple Summary: Bank Onboarding System Specification
+What This Is
+A detailed guide for building a bank customer onboarding system (the process of signing up new customers). It tells developers exactly what parts are needed and how they should work together.
+
+Main Goal
+Make sure the system is secure, follows bank rules, and customers can't do things they shouldn't be able to do (like accessing someone else's account).
+
+How It Works (The Basic Flow)
+Customer starts: Signs up and provides consent
+Customer provides proof: Uploads ID documents and takes a face recognition test
+System checks: Validates documents and face proof
+If something looks wrong: A bank employee reviews it
+Customer approves: Reviews and approves the process
+Bank approves: A bank employee signs off (with a second employee checking it)
+Account created: The system creates the actual bank account
+Key Safety Features
+Maker/Checker rule: For high-risk customers, two bank employees must approve (reduces fraud)
+Only customers can approve their own process: They can't execute anything by themselves
+Approvals expire: Approvals have time limits
+Everything is logged: Every action is recorded for security audits
+Failed attempts tracked: System knows if documents are bad quality or face tests fail
+Main System Parts
+Journey Tracker: Follows the customer through each step
+Policy Engine: Decides if documents/face tests are good enough
+Back-Office Queue: Manages review tasks for bank employees
+Audit Logger: Records everything that happened
+Evidence Storage: Stores documents and face capture data
+What Gets Tested
+Does the system follow the correct step-by-step flow?
+Are decisions (approvals/rejections) working correctly?
+Can bank employees properly review and approve?
+Is everything properly recorded in logs?
+What happens when things fail (bad uploads, network errors)?
+In short: This is a blueprint for a secure, auditable customer signup system where both the customer and the bank have control checks built in.
